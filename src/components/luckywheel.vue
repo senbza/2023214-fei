@@ -34,7 +34,7 @@
         <van-button class="btn" type="primary" @click="getChance" block>获取抽奖机会</van-button>
       </div>
       <div v-else>
-        <p>您输入的抽奖号码为{{ this.realNumber }}</p>
+        <p class="drawClass">您输入的抽奖号码为{{ this.realNumber }}</p>
         <van-button class="btn" type="primary" @click="again" block>再次抽奖</van-button>
       </div>
       <div class="tip">
@@ -230,7 +230,7 @@ export default {
       // 添加次数校验
 
       if (!this.realNumber) {
-        this.$toast('请输入抽奖号码')
+        this.$toast('请先输入抽奖码，并且提交抽奖码才可抽奖哦')
         return
       }
       const status = JSON.parse(localStorage.getItem('status')) || []
@@ -312,6 +312,11 @@ export default {
   background: rgb(252, 207, 133) url("../assets/img/color_pillar.png") no-repeat center bottom;
   background-size: 100%;
   padding-top: 20px;
+}
+
+.drawClass {
+  text-align: center;
+  color: #fff;
 }
 
 .lucky-title {
