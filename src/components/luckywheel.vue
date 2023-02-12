@@ -94,7 +94,7 @@
     <van-popup v-model="showChance" style="width:80%;padding: 10px;">
       <div>
         <p>微信转账10元获得一次抽奖机会，绝无空奖</p>
-        <img src="../assets/img/WechatIMG7.jpeg" class="img" alt="" srcset="">
+        <img src="../assets/img/871676190425_.pic.jpg" class="img" alt="" srcset="">
       </div>
     </van-popup>
     <van-popup v-model="myPrize" style="width:80%;padding: 10px;">
