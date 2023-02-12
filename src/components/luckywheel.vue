@@ -72,11 +72,11 @@
       </div>
       <div class="prize">
         <span>奖品4</span>
-        <p>微信红包520元</p>
+        <p>微信红包20元</p>
       </div>
       <div class="prize">
         <span>奖品5</span>
-        <p>红包20元</p>
+        <p>辣条一包</p>
       </div>
       <div class="prize">
         <span>奖品6</span>
