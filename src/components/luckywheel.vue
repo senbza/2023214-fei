@@ -241,10 +241,11 @@ export default {
       if (!indexFind) {
         this.$toast('抽奖号码已被使用请重新购买')
       } else {
-        const random = indexFind.toString().charAt(indexFind[0].toString().length - 1);
+        console.log(indexFind);
+        const random = indexFind.charAt(indexFind.length - 1);
         console.log(random);
         // 随机获取下标
-        this.index = Number(random) + 1
+        this.index = Number(random)
         // 开始旋转
         this.rotating()
       }
